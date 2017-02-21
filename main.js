@@ -29,6 +29,7 @@ $(document).ready(function(){
       canvas.width = WIDTH;
       canvas.height = HEIGHT;
       canvas.style.width = "100%";
+      canvas.style.height = ((90/768) * 100) + "%";
       //console.log(canvas)
       ctx = canvas.getContext('2d');
       draw();
