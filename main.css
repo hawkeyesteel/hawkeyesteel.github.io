@@ -231,3 +231,5 @@ td {
   width: 100%;
   background-color: #E8E8E8;
 }
+
+@media screen and (max-width: 800px) { .table_img {display:none;} }
