@@ -1,5 +1,5 @@
 var WIDTH = screen.width;
-var HEIGHT = (90/768)*screen.height;
+var HEIGHT = (100/768)*screen.height;
 
 $(document).ready(function(){
   $("#header").hide().delay(0).fadeIn(500)
