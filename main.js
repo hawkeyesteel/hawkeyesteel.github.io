@@ -35,14 +35,40 @@ $(document).ready(function(){
       function draw(){
         //#4F739C
 
+        var colors = ["#3a7ca5", "#2f6690", "#7bb6c9"];
+        var color1 = colors[2];
+        var color2 = colors[1];
+        var color3 = colors[0];
+        // var color1 = colors[(Math.round(Math.random()*(colors.length-1)))];
+        // var color2 = colors[(Math.round(Math.random()*(colors.length-1)))];
+        // var color3 = colors[(Math.round(Math.random()*(colors.length-1)))];
+        // while(color2 == color1){
+        //   color2 = colors[(Math.round(Math.random()*(colors.length-1)))];
+        // }
+        // while(color3 == color1 || color3 == color2){
+        //   color3 = colors[(Math.round(Math.random()*(colors.length-1)))];
+        // }
+
+        //console.log(color1, color2, color3)
+
+
         random_ha = ((Math.random()*(HEIGHT-(HEIGHT*0.15))))+(HEIGHT*0.075);
         random_hb = HEIGHT-random_ha;
 
-        ctx.fillStyle = "#3A7CA5";
+        ctx.fillStyle = color1;
         ctx.fillRect(0, 0, WIDTH, random_ha);
 
-        ctx.fillStyle = "#2F6690";
+        ctx.fillStyle = color2;
         ctx.fillRect(0, random_ha-1, WIDTH, random_hb);
+
+        if(random_ha >= random_hb){
+          ctx.fillStyle = color3;
+          ctx.fillRect(0, (random_ha-(HEIGHT*0.25)), WIDTH, 25)
+        } else if(random_ha < random_hb){
+          ctx.fillStyle = color3;
+          ctx.fillRect(0, random_ha-1, WIDTH, 25)
+        }
+
       }
     }
   }
