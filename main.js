@@ -52,7 +52,7 @@ $(document).ready(function(){
 
         //console.log(color1, color2, color3)
         
-        ctx.globalAlpha = 0.5;
+//         ctx.globalAlpha = 0.5;
 
 
         random_ha = ((Math.random()*(HEIGHT-(HEIGHT*0.15))))+(HEIGHT*0.075);
@@ -77,8 +77,9 @@ $(document).ready(function(){
   }
   renderCanvas();
   
-  
+  var dividers = document.getElementsByClassName('canvas_div');
   for(var canvas in dividers){
+    console.log(dividers[canvas]);
     dividers[canvas].style.opacity = 0.2;
   }
 })
