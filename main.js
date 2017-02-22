@@ -76,4 +76,9 @@ $(document).ready(function(){
     }
   }
   renderCanvas();
+  
+  
+  for(var canvas in dividers){
+    dividers[canvas].style.opacity = 0.2;
+  }
 })
