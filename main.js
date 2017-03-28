@@ -1,5 +1,5 @@
 var WIDTH = screen.width;
-var HEIGHT = (100/768)*screen.height;
+var HEIGHT = (100/1366)*screen.width;
 
 $(document).ready(function(){
   $("#header").hide().delay(0).fadeIn(500)
@@ -40,20 +40,6 @@ $(document).ready(function(){
         var color1 = colors[2];
         var color2 = colors[1];
         var color3 = colors[0];
-        // var color1 = colors[(Math.round(Math.random()*(colors.length-1)))];
-        // var color2 = colors[(Math.round(Math.random()*(colors.length-1)))];
-        // var color3 = colors[(Math.round(Math.random()*(colors.length-1)))];
-        // while(color2 == color1){
-        //   color2 = colors[(Math.round(Math.random()*(colors.length-1)))];
-        // }
-        // while(color3 == color1 || color3 == color2){
-        //   color3 = colors[(Math.round(Math.random()*(colors.length-1)))];
-        // }
-
-        //console.log(color1, color2, color3)
-        
-//         ctx.globalAlpha = 0.5;
-
 
         random_ha = ((Math.random()*(HEIGHT-(HEIGHT*0.15))))+(HEIGHT*0.075);
         random_hb = HEIGHT-random_ha;
@@ -77,9 +63,4 @@ $(document).ready(function(){
   }
   renderCanvas();
   
-  var dividers = document.getElementsByClassName('canvas_div');
-  for(var canvas in dividers){
-    console.log(dividers[canvas]);
-    dividers[canvas].style.opacity = 0.2;
-  }
 })
