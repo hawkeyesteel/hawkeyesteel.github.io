@@ -230,6 +230,7 @@ td {
 .table_img {
   width: 100%;
   background-color: #E8E8E8;
+  border-radius: 2px;
 }
 
 @media screen and (max-width: 950px) { .table_img {display:none;} .description {width: 100%;}}
