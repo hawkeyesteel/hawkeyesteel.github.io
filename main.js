@@ -62,14 +62,14 @@ $(document).ready(function(){
         ctx.fillRect(0, 0, WIDTH, random_ha);
 
         ctx.fillStyle = color2;
-        ctx.fillRect(0, random_ha-1, WIDTH, random_hb);
+        ctx.fillRect(0, random_ha, WIDTH, random_hb);
 
         if(random_ha >= random_hb){
           ctx.fillStyle = color3;
           ctx.fillRect(0, (random_ha-(HEIGHT*0.25)), WIDTH, 25)
         } else if(random_ha < random_hb){
           ctx.fillStyle = color3;
-          ctx.fillRect(0, random_ha-1, WIDTH, 25)
+          ctx.fillRect(0, random_ha, WIDTH, 25)
         }
 
       }
