@@ -233,4 +233,8 @@ td {
   border-radius: 2px;
 }
 
+.canvas_div {
+  opacity: 0.1; 
+}
+
 @media screen and (max-width: 950px) { .table_img {display:none;} .description {width: 100%;}}
