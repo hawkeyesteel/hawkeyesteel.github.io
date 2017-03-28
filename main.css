@@ -234,7 +234,7 @@ td {
 }
 
 .canvas_div {
-  opacity: 0.1; 
+  opacity: 0.4; 
 }
 
 @media screen and (max-width: 950px) { .table_img {display:none;} .description {width: 100%;}}
